@@ -1,0 +1,67 @@
+/* Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(img/den_haag.jpg); 
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.left-column, .right-column {
+    padding: 15px;
+}
+
+.left-column {
+    width: 100%;
+}
+
+.right-column {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.right-column .attraction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right-column p {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.right-column img {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Query voor grotere schermen */
+@media (min-width: 768px) {
+    .left-column {
+        width: 20%; /* Twee kolommen breed */
+    }
+    .right-column {
+        width: 80%; /* Negen kolommen breed */
+    }
+}

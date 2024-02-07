@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den Haag</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(images/Rijswijkseplein3.jpg);
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 2;
+            background-color: rgb(70, 70, 73);
+            color: white;
+            padding: 20px;
+        }
+
+        .right {
+            flex: 9;
+            background-color: #bdbbc5;
+            padding: 20px;
+        }
+
+        .fact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .fact-list li {
+            margin-bottom: 10px;
+        }
+
+        .article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .article img {
+            margin-left: 20px;
+            max-width: 100px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #717e9a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                flex: 1;
+            }
+
+            .right {
+                margin-top: 20px;
+            }
+
+            .article img {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Den Haag</h1>
+    </header>
+    <div class="container">
+        <div class="left">
+            <ul class="fact-list">
+                <li>Het is de zetel van de Nederlandse regering.</li>
+                <li>Den Haag is niet de hoofdstad van Nederland, dat is Amsterdam.</li>
+                <li>De stad heeft een rijke geschiedenis en cultuur.</li>
+                <li>Den Haag is de thuisbasis van het Internationaal Gerechtshof.</li>
+                <li>De stad heeft prachtige stranden zoals Scheveningen.</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="article">
+                <div>
+                    <p>Een kilometers lang strand in de achtertuin, dat is Scheveningen voor Den Haag. 
+                        Vier seizoenen per jaar een heerlijke plek om te vertoeven. 
+                        Met een glas Chardonnay op een loungebank in de zon of juist met zeiljack vol 
+                        in de wind. 
+                        Onveranderd, welk jaargetijde het ook is, blijft het effect van de frisse wind; 
+                        een ontspannen, rozig en voldaan vakantiegevoel.</p>
+                </div>
+                <img src="images/scheveningen-winter-ocean-preview.jpg" alt="Scheveningen">
+            </div>
+        
+            <div class="article">
+                <div>
+                    <p>In Madurodam beleef je het mooiste en het beste van Nederland. 
+                        Ontdek door wereldberoemde miniaturen, allerlei leuke (water-)spellen en 
+                        attracties waar een klein land groot in is. In Madurodam is er veel te zien 
+                        en er is heel veel om sámen te doen met het hele gezin. Je komt ogen en handen tekort. 
+                        Zo beleef je samen hoe Nederland is ontstaan en zorg je dat het land niet onder water komt te staan.</p>
+                </div>
+                <img src="images/Madurodam-The-Hague-Netherlands-Rene-Cortin-41.jpg" alt="Madurodam">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Den Haag</p>
+    </footer>
+</body>
+</html>
+
